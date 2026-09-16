@@ -15,7 +15,7 @@
 
 `NODE_LINK`
 
-GitHub Secrets 里有一个可选密钥：NODE_LINK（VLESS 节点链接）。   
+GitHub Secrets 里有一个可选密钥：NODE_LINK（VLESS 节点链接 根据值分别生成 wsSettings / tcpSettings / grpcSettings / httpSettings兼容多种格式）。     
 工作流 Setup optional VLESS node 步骤会检查：   
 如果 NODE_LINK 有值 → 下载并运行（通常是 sing-box）本机拉起本地代理。   
 如果 NODE_LINK 为空 → 直接设置 IS_PROXY=false，全程走直连。    
